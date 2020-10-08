@@ -11,8 +11,7 @@
     color:#2E4372;
 }
         </style>
-       
-    </head>
+       </head>
         <?php include 'header.php' ?>
         <div class='content_customer'>
             <h3 style="text-align:center;color:#2E4372;"><u>Terms and conditions</u></h3>
