@@ -35,36 +35,10 @@
             
             <div class="left_panel">
 			
-		<br/>
-		<b>&nbsp;&nbsp;Date :<p id="date" style="color:#DC143C;"></p>
-        &nbsp;&nbsp;Time :<p id="time" style="color:#DC143C;"></p></b>
-		<script type="text/javascript">
-                window.onload = setInterval(clock,1000);
-
-                function clock()
-                {
-            var d = new Date();
-            
-            var date = d.getDate();
-            
-            var month = d.getMonth();
-            var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
-            month=montharr[month];
-            
-            var year = d.getFullYear();
-            
-            var day = d.getDay();
-            var dayarr =["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-            day=dayarr[day];
-            
-            var hour =d.getHours();
-                var min = d.getMinutes();
-            var sec = d.getSeconds();
-
-            document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
-            document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
-                }
-        </script>
+		<?php date_default_timezone_set('Asia/Kolkata');?>
+		<b><p style="color:#f65d84;">Date :</p><p style="color:#DC143C;"><?php Print date("jS F Y"); ?></p>
+		<p style="color:#f65d84;">Day :</p><p style="color:#DC143C;"><?php Print date("l"); ?></p>
+        <p style="color:#f65d84;">Time :</p><p style="color:#DC143C;"><?php include 'time.php'?></p></b>
 		
                 <p>Our internet banking portal provides personal banking services that gives you complete control over all your banking demands online.</p>
                 <h3>Features</h3>
