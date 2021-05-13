@@ -1,6 +1,6 @@
     <?php      
-        $host = "localhost";  
-        $user = "root";  
+        $host = "aws database url";  
+        $user = "database username";  
         $password = '';  
         $db_name = "atm";  
           
